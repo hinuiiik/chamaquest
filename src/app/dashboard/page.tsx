@@ -1,21 +1,15 @@
-import NavBar from "@/app/ui/dashboard/navBar";
-
 export default function Home() {
     return (
         <>
             {/*Webpage Container*/}
-            <div className={"flex overflow-hidden"}>
-        {/*        Navbar component*/}
-        <div className={"bg-white h-screen w-1/6 text-black align p-3"}>
-            <NavBar/>
-        </div>
+
                 <div>
                     <div className={"text-center h-10"}>
                         <h1>Title</h1>
                     </div>
             {/*  Webpage Container  */}
                     <div>
-                        <div className={"flex bg-yellow-50 w-screen"}>
+                        <div className={"flex bg-yellow-50 w-[80vw] "}>
                         {/*Info Container*/}
                         <div className={"flex flex-col justify-center m-4"}>
                             {/*Calendar component*/}
@@ -36,7 +30,7 @@ export default function Home() {
 
                 </div>
 
-            </div>
+
         </>
     );
 }
