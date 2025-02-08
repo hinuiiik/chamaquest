@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chamaquest
 
-## Getting Started
+Financial institutions are powerful tools to help people save, invest, and build for their future, but for many people experiencing extreme poverty, formal banking is out of reach. It is too far, too alien, and above all, too expensive. For many of the 734 million people worldwide earning less than $2 a day, the overdraft fees and account creation fees place traditional banking squarely out of reach.
 
-First, run the development server:
+Many of the global poor have adapted by creating rotating savings and credit institutions (ROSCAs), groups in Kenya dubbed Chamas. In these groups, participants are required by social expectation to save money, depositing it into a physical pot at regular meetings where savings are discussed. Participants then withdraw value from the pot at a regular interval, describing to the group how they'll use it to help themselves. Widely used in parts of the world, ROSCAs are an incredibly helpful solution, but which can't offer interest, or even assure that nobody will run away with the money. Chama aims to help Chamas fix these problems.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Chamaquest works to bridge the accessibility-stability gap by empowering accessible, accountable ROSCAs with the expertise, backing, and interest capacity of local banks. Working with microfinance institutions with experience in lending to those experiencing extreme poverty, we'll provide institutional connections to ROSCAs. Because their assets are pooled, low-wealth investors will be able to finally _receive more than they put in._ Even better, extending deposit insurance to previously informal groups will prevent the devastation of a single individual running away with, or losing, the money. We also envision local banks providing advice to savings groups, offering products to help people save, and gaining a better understanding of how to bank their neighbors.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+We aim to start with a small group of ROSCAs in a small region and build trust one community at a time. We hope to spread primarily by word-of-mouth, so that many existing groups can decide to seek the improvements that we hope to offer. Trusting new institutions is difficult, so we've aimed to smooth the transition by staying as close to existing positive ideas as possible. Chamaquest combines a powerful financial system with the poor's own genius response to poverty. We don't think for a moment that we've solved every problem, and we aim to work in perpetuity with ROSCAs and banks in areas of service to determine how our product can evolve to serve their needs. By working with communities, identifying what works, and establishing trust, Chamaquest can help those with the least see a bit more tomorrow.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technical description
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Chamaquest is a web app built using Next.JS, React, Tailwind, TypeScript, and Postgres.
 
-## Learn More
+## Copyright Information
 
-To learn more about Next.js, take a look at the following resources:
+Created by Vikram Krishnakumar, May Yamanaka, Colin Volpe, and Anna Lynch in Raleigh, North Carolina on 8 February 2025.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
