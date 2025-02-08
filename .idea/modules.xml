@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../huntinthepack.iml" filepath="$PROJECT_DIR$/../huntinthepack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/chamaquest.iml" filepath="$PROJECT_DIR$/.idea/chamaquest.iml" />
     </modules>
   </component>
 </project>
