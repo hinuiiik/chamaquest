@@ -12,6 +12,48 @@ We aim to start with a small group of ROSCAs in a small region and build trust o
 
 Chamaquest is a web app built using Next.JS, React, Tailwind, TypeScript, and Postgres.
 
+### Database fields
+
+User:
+
+- id (int)
+- email (string)
+- name (string)
+- password (string)
+- chamas (array of IDs)
+- depositHistory (array of deposits)
+- withdrawlHistory (array of withdrawals)
+
+Deposit:
+
+- depositor (id)
+- chama (id)
+- paidAmount (number)
+- requiredAmount (number)
+- dueDate (time)
+
+Withdrawal:
+
+- recipient (id)
+- chama (id)
+- amount (float)
+- time (time)
+
+Meetings:
+
+- start-time (time)
+- end-time (time)
+
+Chama:
+
+- id (number)
+- balance (number)
+- depositRequirement (number)
+- members (array of IDs)
+- meetings (array of meetings)
+- depositHistory
+- withdrawalHistory (array of withdrawals)
+
 ## Copyright Information
 
 Created by Vikram Krishnakumar, May Yamanaka, Colin Volpe, and Anna Lynch in Raleigh, North Carolina on 8 February 2025.
