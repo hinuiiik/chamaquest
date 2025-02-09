@@ -18,7 +18,7 @@ export default function DashboardPage() {
     return (
         <div>
             {/* Dynamic Content Rendering */}
-            <div className="flex bg-gray-800 w-[80vw]">
+            <div className="flex bg-gray-800 w-[80vw] h-screen">
                 {/* Info Container */}
                 <div className="flex flex-col justify-center m-4">
                     <div className="bg-red-500 w-80 h-64 mb-2">
@@ -26,7 +26,7 @@ export default function DashboardPage() {
                         <Calendar id={sectionId}
                                   userId = {userId}/>
                     </div>
-                    <div className="bg-blue-400 w-auto h-auto mt-2">
+                    <div className="bg-gray-700 w-auto h-auto mt-2">
                         {/* Pass `id` to InfoBox */}
                         <InfoBox id={sectionId}
                         userId = {userId}/>
