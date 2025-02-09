@@ -1,6 +1,6 @@
 import InfoBox from "@/app/ui/dashboard/info";
 import Chatbox from "@/app/ui/dashboard/chatbox";
-
+import Calendar from "@/app/ui/dashboard/calendar";
 
 export default function Home() {
     return (
@@ -13,12 +13,13 @@ export default function Home() {
                 </div>
                 {/*  Webpage Container  */}
                 <div>
-                    <div className={"flex bg-yellow-50 w-[80vw] "}>
+                    <div className={"flex bg-gray-800 w-[80vw] "}>
                         {/*Info Container*/}
                         <div className={"flex flex-col justify-center m-4"}>
                             {/*Calendar component*/}
-                            <div className={"bg-red-500  w-80 h-64 mb-2"}>
-                                <p>calendar</p>
+                            <div className={`bg-red-500 w-80 h-64 mb-2`}>
+                                {/*<p>calendar</p>*/}
+                                <Calendar/>
                             </div>
                             {/*Info Component*/}
                             <div className={"bg-blue-400 w-auto h-auto mt-2"}>
