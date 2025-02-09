@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-import Cal from ".././ui/dashboard/calendar"
-=======
-import InfoBox from "@/app/ui/dashboard/info";
-import Chatbox from "@/app/ui/dashboard/chatbox";
-import Calendar from "@/app/ui/dashboard/calendar";
->>>>>>> 7ca36e0d18f292019fe39abf8132dbd829e0a57e
-
 export default function Home() {
     return (
         <>
-<<<<<<< HEAD
             {/*Webpage Container*/}
 
                 <div>
@@ -23,7 +14,7 @@ export default function Home() {
                         <div className={"flex flex-col justify-center m-4"}>
                             {/*Calendar component*/}
                             <div className={"bg-red-500  w-80 h-64 mb-2"}>
-                                <Cal/>
+                                <p>calendar</p>
                             </div>
                             {/*Info Component*/}
                             <div className={"bg-blue-400 w-80 h-48 mt-2"}>
@@ -40,14 +31,6 @@ export default function Home() {
                 </div>
 
 
-=======
-            {/*<div className="bg-purple-800 flex w-[50vw] h-[86vh] m-5">*/}
-            {/*    /!* Pass `id` to Chatbox *!/*/}
-            {/*    <Chatbox*/}
-            {/*        sectionId={"1"}*/}
-            {/*    />*/}
-            {/*</div>*/}
->>>>>>> 7ca36e0d18f292019fe39abf8132dbd829e0a57e
         </>
     );
 }

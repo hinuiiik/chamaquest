@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-//import NavBar from "@/app/ui/dashboard/navBar";
+import NavBar from "@/app/ui/dashboard/navBar";
 
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
         <body>
         <div className={"overflow-hidden flex"}>
         <div className={"bg-white h-screen w-64 text-black align p-3 border-r-4 border-pink-500"}>
-            
+            <NavBar/>
         </div>
 =======
         <body className={"fixed"}>
