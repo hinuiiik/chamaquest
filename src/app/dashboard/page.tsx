@@ -1,3 +1,5 @@
+import Cal from ".././ui/dashboard/calendar"
+
 export default function Home() {
     return (
         <>
@@ -14,7 +16,7 @@ export default function Home() {
                         <div className={"flex flex-col justify-center m-4"}>
                             {/*Calendar component*/}
                             <div className={"bg-red-500  w-80 h-64 mb-2"}>
-                                <p>calendar</p>
+                                <Cal/>
                             </div>
                             {/*Info Component*/}
                             <div className={"bg-blue-400 w-80 h-48 mt-2"}>

@@ -1,4 +1,4 @@
-import NavElement from "@/app/ui/dashboard/navElement";
+/*import NavElement from "@/app/ui/dashboard/navElement";
 import { sql } from '@vercel/postgres';
 
 export default function NavBar(){
@@ -18,4 +18,4 @@ export default function NavBar(){
         </>
 
     );
-}
+}*/
