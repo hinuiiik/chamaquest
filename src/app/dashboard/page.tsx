@@ -3,13 +3,13 @@ export default function Home() {
         <>
             {/*Webpage Container*/}
 
+            <div>
+                <div className={"text-center h-10"}>
+                    <h1>Title</h1>
+                </div>
+                {/*  Webpage Container  */}
                 <div>
-                    <div className={"text-center h-10"}>
-                        <h1>Title</h1>
-                    </div>
-            {/*  Webpage Container  */}
-                    <div>
-                        <div className={"flex bg-yellow-50 w-[80vw] "}>
+                    <div className={"flex bg-yellow-50 w-[80vw] "}>
                         {/*Info Container*/}
                         <div className={"flex flex-col justify-center m-4"}>
                             {/*Calendar component*/}
@@ -26,9 +26,9 @@ export default function Home() {
                             <p> chatbox</p>
                         </div>
                     </div>
-                    </div>
-
                 </div>
+
+            </div>
 
 
         </>
