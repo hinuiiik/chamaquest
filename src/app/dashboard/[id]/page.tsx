@@ -18,7 +18,7 @@ export default function DashboardPage() {
     return (
         <div>
             {/* Dynamic Content Rendering */}
-            <div className="flex bg-gray-800 w-[80vw]">
+            <div className="flex bg-gray-800 w-[80vw] h-screen">
                 {/* Info Container */}
                 <div className="flex flex-col justify-center m-4">
                     <div className="bg-red-500 w-80 h-64 mb-2">
