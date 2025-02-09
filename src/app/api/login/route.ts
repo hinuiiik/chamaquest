@@ -1,7 +1,7 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";
 
-export async function POST(req: Request, res: NextApiResponse) {
+// ✅ Correct `POST` function for App Router
+export async function POST(req: Request) {
   console.log("Raise up!");
 
   const data = await req.json();
@@ -10,14 +10,9 @@ export async function POST(req: Request, res: NextApiResponse) {
   return NextResponse.json({ status: 201 });
 }
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method !== "GET") {
-    res.status(405).send({ message: "No." });
-    return;
-  }
-
+// ✅ Correct `GET` function for App Router
+export async function GET(req: Request) {
   console.log("North Carolina!");
-  const data = req.body;
 
   return NextResponse.json({ status: 201 });
 }
