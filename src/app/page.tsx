@@ -1,11 +1,13 @@
 
 
 export default function Home() {
+    const PRIMARY: string = "bg-gray-800"
+
   return (
       <>
-      <div className={"flex flex-col bg-white w-screen h-screen"}>
+      <div className={"flex flex-col bg-gray-800 w-screen h-screen"}>
           {/*Big landing header type thing*/}
-          <div className={"bg-orange-400 w-[75%] h-screen ml-16 p-8"}>
+          <div className={"bg-gray-800 w-[75%] h-screen ml-16 p-8"}>
               {/*Text*/}
               <div>
                   {/*Header*/}
