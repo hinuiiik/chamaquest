@@ -1,18 +1,18 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { io, Socket } from "socket.io-client";
 
 const SOCKET_SERVER_URL = "wss://socket1.hinuiiik.win";
 // const SOCKET_SERVER_URL = "ws://192.168.2.23:4423";
 
-
 export default function Chatbox({ sectionId }: { sectionId: string }) {
     const [messages, setMessages] = useState<{ user: string; text: string }[]>([]);
     const [input, setInput] = useState("");
     const [socket, setSocket] = useState<Socket | null>(null);
+    const messagesEndRef = useRef<HTMLDivElement | null>(null); // idk if this is necessary but meh
 
-    const username = "Guest123"; // Placeholder username
+    const username = "Guest123"; // TODO: auth
 
     useEffect(() => {
         const newSocket = io(SOCKET_SERVER_URL);
@@ -29,6 +29,13 @@ export default function Chatbox({ sectionId }: { sectionId: string }) {
         };
     }, [sectionId]);
 
+    useEffect(() => {
+        // Scroll to the bottom whenever messages change
+        if (messagesEndRef.current) {
+            messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    }, [messages]); // Run when messages change
+
     const sendMessage = () => {
         if (input.trim() && socket) {
             const message = { user: username, text: input };
@@ -37,12 +44,13 @@ export default function Chatbox({ sectionId }: { sectionId: string }) {
         }
     };
 
+    // Handle Enter key press to send message
     const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (e.key == "Enter" && !e.shiftKey) { // thought i was thinking ahead but i didn't implement newlines
+        if (e.key === "Enter" && !e.shiftKey) { // i could implement newlines but i wont
             e.preventDefault();
             sendMessage();
         }
-    }
+    };
 
     return (
         <div className="w-full h-full flex flex-col border rounded-md bg-gray-900 p-4">
@@ -54,9 +62,11 @@ export default function Chatbox({ sectionId }: { sectionId: string }) {
                         {msg.text}
                     </div>
                 ))}
+                {/* Scroll to bottom marker */}
+                <div ref={messagesEndRef} />
             </div>
 
-            {/* Input fidel castro */}
+            {/* Input field */}
             <div className="flex mt-2">
                 <input
                     className="flex-1 p-2 border rounded bg-gray-700 text-white"
