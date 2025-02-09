@@ -9,7 +9,7 @@ export default function NavBar() {
     useEffect(() => {
         async function fetchUserChamas() {
             try {
-                const response = await fetch('/query');
+                const response = await fetch('/api/users/me/chamas');
                 if (!response.ok) {
                     throw new Error("Failed to fetch chamas");
                 }
