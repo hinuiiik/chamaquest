@@ -1,7 +1,6 @@
 
 
 export default function Home() {
-    const PRIMARY: string = "bg-gray-800"
 
   return (
       <>
@@ -21,27 +20,27 @@ export default function Home() {
 
               </div>
               {/*Register now*/}
-              <div className={"bg-pink-400 text-center ml-[30%] mt-24 text-5xl w-fit p-6  rounded-4xl"}>
-                  <button type={"button"}>Register Now</button>
+              <div className={" bg-purple-950 text-center ml-[30%] m-12 text-5xl w-fit p-6  rounded-4xl"}>
+                  <a href={"./login"}><button type={"button"}  >Register Now</button></a>
               </div>
           </div>
 
       {/*    Explain one*/}
-          <div className={"bg-black w-screen h-[75vh] flex"}>
-              <div className={"h-[70vh] w-[50%] m-1 bg-yellow-400 text-7xl text-center pt-24"}>
+          <div className={" w-screen h-[75vh] flex mt-2"}>
+              <div className={"h-[70vh] w-[50%] m-1 mt-0 mb-0 bg-gray-800 text-7xl text-center pt-24"}>
                   <h1>The trust you need</h1>
               </div>
-              <div className={"w-fit bg-purple-800 p-32 text-xl "}>
+              <div className={"w-fit bg-gray-700 p-32 text-xl "}>
                   <p>textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox    </p>
               </div>
 
           </div>
 
-          <div className={"bg-black w-screen h-[75vh] flex"}>
-              <div className={"w-fit bg-purple-800 p-32 text-xl "}>
+          <div className={" w-screen h-[75vh] flex mt-1"}>
+              <div className={"w-fit bg-gray-700 p-32 text-xl mt-1 "}>
                   <p>textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox textbox    </p>
               </div>
-              <div className={"h-[70vh] w-[50%] mr-10 bg-yellow-400 text-7xl text-center pt-24"}>
+              <div className={"h-[70vh] w-[50%] m-1 mb-0 bg-gray-800 text-7xl text-center pt-24"}>
                   <h1>The service you deserve</h1>
               </div>
 
