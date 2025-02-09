@@ -37,6 +37,13 @@ export default function Chatbox({ sectionId }: { sectionId: string }) {
         }
     };
 
+    const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key == "Enter" && !e.shiftKey) { // thought i was thinking ahead but i didn't implement newlines
+            e.preventDefault();
+            sendMessage();
+        }
+    }
+
     return (
         <div className="w-full h-full flex flex-col border rounded-md bg-gray-900 p-4">
             {/* Individual messages */}
@@ -55,6 +62,7 @@ export default function Chatbox({ sectionId }: { sectionId: string }) {
                     className="flex-1 p-2 border rounded bg-gray-700 text-white"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
+                    onKeyDown={handleKeyPress}
                     placeholder="Type a message..."
                 />
                 <button className="ml-2 p-2 bg-blue-500 text-white rounded" onClick={sendMessage}>
