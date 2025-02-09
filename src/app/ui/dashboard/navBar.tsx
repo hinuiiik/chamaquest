@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import NavElement from "@/app/ui/dashboard/navElement";
 
 export default function NavBar() {
-    const [chamaNames, setChamaNames] = useState<string[]>([]);
+    const [chamaNames, setChamaNames] = useState<[number, string][]>([]); // 2D array
 
     useEffect(() => {
         async function fetchUserChamas() {
@@ -15,20 +15,21 @@ export default function NavBar() {
                 }
                 const data = await response.json();
 
-                if (data.length > 0 && data[0].chamas) {
-                    setChamaNames(data[0].chamas);
+                if (Array.isArray(data) && data.length > 0) {
+                    setChamaNames(data); // Data is already in correct format
                 } else {
-                    setChamaNames([]);
+                    setChamaNames([]); // Set empty array if no data
                 }
             } catch (error) {
                 console.error("Error fetching chama names:", error);
+                setChamaNames([]); // Handle errors properly
             }
         }
         fetchUserChamas();
     }, []);
 
-    const navItems = chamaNames.map((name, index) => (
-        <NavElement key={index} id={index} name={name} />
+    const navItems = chamaNames.map(([id, name]) => (
+        <NavElement key={id} id={id} name={name} />
     ));
 
     return (

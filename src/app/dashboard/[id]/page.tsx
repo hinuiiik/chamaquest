@@ -13,7 +13,8 @@ export default function DashboardPage() {
         return <div>Loading...</div>;
     }
 
-    const userId= id[0];
+    const userId= 1;
+    const sectionId = +id[0];
     return (
         <div>
             {/* Dynamic Content Rendering */}
@@ -22,18 +23,22 @@ export default function DashboardPage() {
                 <div className="flex flex-col justify-center m-4">
                     <div className="bg-red-500 w-80 h-64 mb-2">
                         {/* Pass `id` to Calendar */}
-                        <Calendar id={userId as string} />
+                        <Calendar id={sectionId}
+                                  userId = {userId}/>
                     </div>
                     <div className="bg-blue-400 w-auto h-auto mt-2">
                         {/* Pass `id` to InfoBox */}
-                        <InfoBox id={userId as string} />
+                        <InfoBox id={sectionId}
+                        userId = {userId}/>
                     </div>
                 </div>
 
                 {/* Chatbox Component */}
                 <div className="bg-purple-800 flex w-[50vw] h-[86vh] m-5">
                     {/* Pass `id` to Chatbox */}
-                    <Chatbox sectionId={userId} />
+                    <Chatbox
+                        sectionId={sectionId}
+                        userId = {userId} />
                 </div>
             </div>
         </div>

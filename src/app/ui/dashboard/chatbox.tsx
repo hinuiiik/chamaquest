@@ -6,7 +6,7 @@ import { io, Socket } from "socket.io-client";
 const SOCKET_SERVER_URL = "wss://socket1.hinuiiik.win";
 // const SOCKET_SERVER_URL = "ws://192.168.2.23:4423";
 
-export default function Chatbox({ sectionId }: { sectionId: string }) {
+export default function Chatbox({ sectionId, userId }: { sectionId: number, userId: number }) {
     const [messages, setMessages] = useState<{ user: string; text: string }[]>([]);
     const [input, setInput] = useState("");
     const [socket, setSocket] = useState<Socket | null>(null);

@@ -7,7 +7,7 @@ import 'react-calendar/dist/Calendar.css';
 type ValuePiece = Date | null;
 type Value = ValuePiece | [ValuePiece, ValuePiece];
 
-export default function Cal({ id }: { id: string }) {
+export default function Cal({ id, userId }: { id: number, userId: number }) {
     const dateTest = new Date(2025, 1, 21); // Test date
     const [value, onChange] = useState<Value>(new Date());
 

@@ -1,7 +1,7 @@
 import moment from "moment";
 
 
-export default function InfoBox({ id }: { id: string }){
+export default function InfoBox({ id, userId }: { id: number, userId: number}){
     const endOfMonth   = moment().endOf('month').format('MM-DD');
 
     return(<>
