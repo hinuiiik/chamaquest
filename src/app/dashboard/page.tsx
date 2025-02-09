@@ -19,7 +19,7 @@ export default function Home() {
                                 <p>calendar</p>
                             </div>
                             {/*Info Component*/}
-                            <div className={"bg-blue-400 w-80 h-48 mt-2 flex-col "}>
+                            <div className={"bg-blue-400 w-80 h-48 mt-2"}>
                                 <InfoBox/>
                             </div>
                         </div>
