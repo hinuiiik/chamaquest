@@ -33,7 +33,7 @@ export default function LoginForm() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <input
+        <input
         type="text"
         className="bg-gray-100 m-2 text-gray-600 h-9 rounded-2xl p-3"
         placeholder={"Password"}
@@ -43,7 +43,7 @@ export default function LoginForm() {
       <div
         id="horizontalFlexboxSignUpButtonContainer"
         className="flex flex-row justify-center">
-        <button
+        <a href={"./dashboard"}><button
           id="signUpButton"
           className="flex flex-row justify-center rounded-2xl
           border-2 gap-2 p-2 mt-3 mb-1 hover:border-3 hover:font-bold
@@ -51,7 +51,7 @@ export default function LoginForm() {
           type="submit">
           {" "}
           <p className="font-bold"> Enter </p>
-        </button>
+        </button></a>
       </div>
     </form>
   );
