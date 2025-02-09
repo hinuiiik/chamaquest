@@ -1,11 +1,11 @@
-export default function NavElement({name}: {id: number, name: string}){
+import Link from "next/link";
 
-
-    return(
+export default function NavElement({ id, name }: { id: number; name: string }) {
+    return (
         <>
-        <div className={"rounded-md bg-green-400 m-auto w-[90%] mb-4 p-2 text-center"}>
-            <p>{name}</p>
-        </div>
+            <Link href={`/dashboard/${id+1}`} className="rounded-md bg-green-400 m-auto w-[90%] mb-4 p-2 text-center">
+                    {name}
+            </Link>
         </>
     );
 }
