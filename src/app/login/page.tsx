@@ -1,15 +1,13 @@
 import Image from "next/image";
-import Link from "next/link";
-import LoginForm from "../ui/forms/loginForm";
 
 export default function Home() {
   return (
     <div
       id="fullpage"
-      className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 bg-gray-200 gap-16 sm:p-20">
+      className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main
-        id="centerContainer"
-        className="flex-col gap-8 rounded-xl bg-purple-900 row-start-2 items-center items-center p-3">
+        id="center"
+        className="flex-col gap-8 rounded-xl bg-blue-400 row-start-2 items-center sm:items-start p-3">
         <div id="logoContainer" className="flex flex-row justify-center">
           <Image
             className="dark:invert m-4"
@@ -20,26 +18,41 @@ export default function Home() {
             priority
           />
         </div>
-        <div id="logInLabel" className="m-2 text-1xl text-center text-12xl ">
-          <p className="mb-2 mt-0">
-            {" "}
-            Further your financial journey... <br className="leading-9" /> {""}
-            <b> Log In. </b>{" "}
-          </p>
-        </div>
-        <LoginForm />
         <div
-          id="horizontalFlexboxSignUpButtonContainer"
-          className="flex flex-row justify-center">
-          <Link
-            id="signUpButton"
-            className="flex flex-row justify-center rounded-2xl border-2 gap-2 p-2 mt-3 mb-1 hover:border-3 hover:font-bold hover:shadow-3xl mt-12"
-            href="../signup">
-            <p className="italic">
-              {" "}
-              No account? <u> Sign up. </u>{" "}
-            </p>
-          </Link>
+          id="list"
+          className="list-inside m-2 list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <p className="mb-2">
+            Log in to the thingy!{" "}
+            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded-sm font-semibold">
+              src/app/page.tsx
+            </code>
+            .
+          </p>
+          <p>Save and see your changes instantly.</p>
+        </div>
+
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <a
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Image
+              className="dark:invert"
+              src="/vercel.svg"
+              alt="Vercel logomark"
+              width={20}
+              height={20}
+            />
+            Deploy now
+          </a>
+          <a
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer">
+            Read our docs
+          </a>
         </div>
       </main>
     </div>
