@@ -14,8 +14,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body>
-        <div className={"overflow-hidden flex"}>
+        <body className={"fixed"}>
+        <div className={"flex"}>
             <div className={"bg-white h-screen w-64 text-black align p-3 border-r-4 border-pink-500"}>
                 <NavBar/>
             </div>
