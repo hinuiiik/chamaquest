@@ -13,6 +13,7 @@
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react-hooks": "^5.1.0",
     "latest": "^0.2.0",
+    "moment": "^2.30.1",
     "n": "^10.1.0",
     "next": "15.1.6",
     "pnpm": "^10.2.1",
