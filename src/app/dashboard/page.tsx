@@ -1,4 +1,6 @@
 import InfoBox from "@/app/ui/dashboard/info";
+import Chatbox from "@/app/ui/dashboard/chatbox";
+
 
 export default function Home() {
     return (
@@ -25,7 +27,10 @@ export default function Home() {
                         </div>
                         {/*Chatbox Component*/}
                         <div className={"bg-purple-800 flex w-[50vw] h-[86vh]  m-5"}>
-                            <p> chatbox</p>
+                            {/*<p> chatbox</p>*/}
+                            <Chatbox
+                                sectionId={"1"}
+                            />
                         </div>
                     </div>
                 </div>
