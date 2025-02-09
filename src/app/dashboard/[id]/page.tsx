@@ -26,7 +26,7 @@ export default function DashboardPage() {
                         <Calendar id={sectionId}
                                   userId = {userId}/>
                     </div>
-                    <div className="bg-blue-400 w-auto h-auto mt-2">
+                    <div className="bg-gray-700 w-auto h-auto mt-2">
                         {/* Pass `id` to InfoBox */}
                         <InfoBox id={sectionId}
                         userId = {userId}/>
