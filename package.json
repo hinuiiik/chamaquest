@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@vercel/postgres": "^0.10.0",
+<<<<<<< HEAD
+=======
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react-hooks": "^5.1.0",
+>>>>>>> 7ca36e0d18f292019fe39abf8132dbd829e0a57e
     "latest": "^0.2.0",
     "moment": "^2.30.1",
     "n": "^10.1.0",

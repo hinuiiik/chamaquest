@@ -1,7 +1,12 @@
+<<<<<<< HEAD
+/*import NavElement from "@/app/ui/dashboard/navElement";
+import { sql } from '@vercel/postgres';
+=======
 'use client';
 
 import { useEffect, useState } from "react";
 import NavElement from "@/app/ui/dashboard/navElement";
+>>>>>>> 7ca36e0d18f292019fe39abf8132dbd829e0a57e
 
 export default function NavBar() {
     const [chamaNames, setChamaNames] = useState<string[]>([]);
@@ -36,4 +41,8 @@ export default function NavBar() {
             {navItems.length > 0 ? navItems : <p>Loading...</p>}
         </div>
     );
+<<<<<<< HEAD
+}*/
+=======
 }
+>>>>>>> 7ca36e0d18f292019fe39abf8132dbd829e0a57e
