@@ -1,8 +1,8 @@
 import { db } from "@vercel/postgres";
 
-const client = await db.connect();
+export async function GET() {
+    const client = await db.connect(); // Move client inside the function
 
-export async function getUserChamas() {
     // Query to join users and chamas based on the chamas array
     const { rows } = await client.sql`
         SELECT c.id, c.name
@@ -11,9 +11,8 @@ export async function getUserChamas() {
         WHERE u.id = 1
     `;
 
-    return rows.map(({ id, name }) => [id, name]); // Convert to 2D array
-}
+    // Convert to 2D array format [[id, name], [id, name]]
+    const chamaNames = rows.map(({ id, name }) => [id, name]);
 
-export async function GET() {
-    return Response.json(await getUserChamas());
+    return Response.json(chamaNames);
 }
