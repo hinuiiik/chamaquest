@@ -1,3 +1,5 @@
+import InfoBox from "@/app/ui/dashboard/info";
+
 export default function Home() {
     return (
         <>
@@ -17,8 +19,8 @@ export default function Home() {
                                 <p>calendar</p>
                             </div>
                             {/*Info Component*/}
-                            <div className={"bg-blue-400 w-80 h-48 mt-2"}>
-                                <p>info</p>
+                            <div className={"bg-blue-400 w-80 h-48 mt-2 flex-col "}>
+                                <InfoBox/>
                             </div>
                         </div>
                         {/*Chatbox Component*/}
