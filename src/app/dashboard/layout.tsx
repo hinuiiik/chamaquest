@@ -17,7 +17,7 @@ export default function RootLayout({
         <body className={"fixed"}>
         <div className={"flex"}>
             <div className={"bg-gray-800 h-screen w-64 text-black align p-3 border-r-4 border-gray-700"}>
-                {/*<NavBar/>*/}
+                <NavBar/>
             </div>
             {children}
         </div>

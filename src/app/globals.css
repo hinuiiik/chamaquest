@@ -43,13 +43,13 @@ body {
 
 /* Apply background color to the entire calendar */
 .react-calendar {
-  background-color: #2d2d2d !important; /* Dark background for the whole calendar */
+  background-color:  rgb(31 41 55) !important; /* Dark background for the whole calendar */
   border-radius: 10px;
 }
 
 /* Apply background color to the header */
 .react-calendar__navigation {
-  background-color: #1a1a1a !important; /* Darker background for the header */
+  background-color: rgb(17 24 39) !important; /* Darker background for the header */
   margin-bottom: 0 !important;
 }
 
